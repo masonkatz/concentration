@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05479F6422A49E700057815B /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05479F6322A49E700057815B /* Concentration.swift */; };
+		05479F6622A49EB40057815B /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05479F6522A49EB40057815B /* Card.swift */; };
 		055E73BF22A48A23001399CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055E73BE22A48A23001399CF /* AppDelegate.swift */; };
 		055E73C122A48A23001399CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055E73C022A48A23001399CF /* ViewController.swift */; };
 		055E73C422A48A23001399CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 055E73C222A48A23001399CF /* Main.storyboard */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05479F6322A49E700057815B /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
+		05479F6522A49EB40057815B /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		055E73BB22A48A23001399CF /* concentration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = concentration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		055E73BE22A48A23001399CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		055E73C022A48A23001399CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +106,8 @@
 				055E73BE22A48A23001399CF /* AppDelegate.swift */,
 				055E73C022A48A23001399CF /* ViewController.swift */,
 				055E73C222A48A23001399CF /* Main.storyboard */,
+				05479F6322A49E700057815B /* Concentration.swift */,
+				05479F6522A49EB40057815B /* Card.swift */,
 				055E73C822A48A24001399CF /* Assets.xcassets */,
 				055E73CA22A48A24001399CF /* LaunchScreen.storyboard */,
 				055E73CD22A48A24001399CF /* Info.plist */,
@@ -260,6 +266,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				055E73C722A48A23001399CF /* concentration.xcdatamodeld in Sources */,
+				05479F6422A49E700057815B /* Concentration.swift in Sources */,
+				05479F6622A49EB40057815B /* Card.swift in Sources */,
 				055E73C122A48A23001399CF /* ViewController.swift in Sources */,
 				055E73BF22A48A23001399CF /* AppDelegate.swift in Sources */,
 			);
