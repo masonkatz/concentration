@@ -19,9 +19,22 @@ class Concentration {
 			let card = Card()
 			cards += [ card, card ]
 		}
-		// TODO - shuffle cards
-
+		shuffleCards()
 	}
+
+//let randomIndex = Int(arc4random_uniform(UInt32(emojiChoices.count)))
+
+	func shuffleCards() {
+		var copyOfCards = cards
+		
+		for index in cards.indices {
+			let randomIndex = Int(arc4random_uniform(UInt32(copyOfCards.count)))
+			let randomCard  = copyOfCards.remove(at: randomIndex)
+			
+			cards[index].identifier = randomCard.identifier
+		}
+	}
+
 	
 	func chooseCard(at index: Int) {
 		if !cards[index].isMatched {
