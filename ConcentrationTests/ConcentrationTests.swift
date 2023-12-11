@@ -6,6 +6,7 @@
 //
 
 import XCTest
+
 @testable import Concentration
 
 final class ConcentrationTests: XCTestCase {
