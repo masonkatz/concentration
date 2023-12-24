@@ -7,39 +7,65 @@
 
 import SwiftUI
 
-enum Emojis {
+enum Themes {
     case halloween
     case transportation
     case animals
 }
 
+struct Theme {
+    let emojis: [String]
+    let color: Color
+}
+
 struct ContentView: View {
-    let emojiMap = [
-        Emojis.halloween:
-            [
-                "👻", "🎃", "🕷", "😈", "💀", "🕸", "🧙‍♀️",
-                "🙀", "👹", "😱", "☠️", "🍭",
+    let themes = [
+        Themes.halloween: Theme(
+            emojis: [
+                "👻", "🎃", "🕷", "😈", "💀", "🕸", "🧙‍♀️", "🙀", "👹",
+                "😱", "☠️", "🍭",
             ],
-        Emojis.transportation:
-            [
-                "🚔", "🚂", "🚲", "🚗", "🏍", "✈️", "⛵️",
-                "🛵", "🛴", "🛸", "🚁", "🛶", "🚠",
+            color: .orange
+        ),
+        Themes.transportation: Theme(
+            emojis: [
+                "🚔", "🚂", "🚲", "🚗", "🏍", "✈️", "⛵️", "🛵", "🛴",
+                "🛸", "🚁", "🛶", "🚠",
             ],
-        Emojis.animals:
-            [
-                "🐶", "🐱", "🐭", "🐹", "🐰", "🦊", "🐻",
-                "🐼", "🐻‍❄️", "🐨", "🐯", "🦁", "🐮", "🐷", "🐸", "🐵",
+            color: .blue
+        ),
+        Themes.animals: Theme(
+            emojis: [
+                "🐶", "🐱", "🐭", "🐹", "🐰", "🦊", "🐻", "🐼", "🐻‍❄️", "🐨",
+                "🐯", "🦁", "🐮", "🐷", "🐸", "🐵",
             ],
+            color: .green
+        ),
     ]
 
     @State var emojis: [String] = []
+    @State var color: Color = .black
 
     init() {
-        var cards = emojiMap[Emojis.halloween]!
-        cards += cards
-        cards = cards.shuffled()
+        let theme = themes[Themes.halloween]!
 
-        _emojis = State(initialValue: cards)
+        _emojis = State(initialValue: getEmojis(from: Themes.halloween))
+        _color = State(initialValue: theme.color)
+    }
+
+    func getEmojis(from theme: Themes) -> [String] {
+        var emojis = themes[theme]!.emojis
+        let numCards = Int.random(in: 2...emojis.count)
+
+        emojis.shuffle()
+        emojis = Array(emojis[..<numCards])
+        emojis = emojis + emojis
+        return emojis.shuffled()
+    }
+
+    func setTheme(to theme: Themes) {
+        emojis = getEmojis(from: theme)
+        color = themes[theme]!.color
     }
 
     var body: some View {
@@ -62,10 +88,10 @@ struct ContentView: View {
                     .aspectRatio(2 / 3, contentMode: .fit)
             }
         }
-        .foregroundColor(.orange)
+        .foregroundColor(color)
     }
 
-    func chooseEmojis(theme: Emojis, symbol: String, text: String) -> some View {
+    func chooseTheme(theme: Themes, symbol: String, text: String) -> some View {
         VStack {
             Button(
                 action: {
@@ -80,22 +106,16 @@ struct ContentView: View {
         }
     }
 
-    func setTheme(to theme: Emojis) {
-        var cards = emojiMap[theme]!
-        cards += cards
-        emojis = cards.shuffled()
-    }
-
     var chooseHalloween: some View {
-        chooseEmojis(theme: Emojis.halloween, symbol: "moon.haze.fill", text: "Halloween")
+        chooseTheme(theme: Themes.halloween, symbol: "moon.haze.fill", text: "Halloween")
     }
 
     var chooseTransportation: some View {
-        chooseEmojis(theme: Emojis.transportation, symbol: "car", text: "Transportation")
+        chooseTheme(theme: Themes.transportation, symbol: "car", text: "Transportation")
     }
 
     var chooseAnimals: some View {
-        chooseEmojis(theme: Emojis.animals, symbol: "hare", text: "Animals")
+        chooseTheme(theme: Themes.animals, symbol: "hare", text: "Animals")
     }
 
     var emojiSelecter: some View {
