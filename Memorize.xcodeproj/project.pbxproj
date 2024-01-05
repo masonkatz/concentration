@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0503A9582B251D4C003CF2B5 /* ConcentrationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0503A9572B251D4C003CF2B5 /* ConcentrationApp.swift */; };
-		0503A95A2B251D4C003CF2B5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0503A9592B251D4C003CF2B5 /* ContentView.swift */; };
+		0503A9582B251D4C003CF2B5 /* MemorizeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0503A9572B251D4C003CF2B5 /* MemorizeApp.swift */; };
+		0503A95A2B251D4C003CF2B5 /* EmojiMemoryGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0503A9592B251D4C003CF2B5 /* EmojiMemoryGameView.swift */; };
 		0503A95C2B251D4E003CF2B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0503A95B2B251D4E003CF2B5 /* Assets.xcassets */; };
 		0503A95F2B251D4E003CF2B5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0503A95E2B251D4E003CF2B5 /* Preview Assets.xcassets */; };
-		0503A9692B251D4E003CF2B5 /* ConcentrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0503A9682B251D4E003CF2B5 /* ConcentrationTests.swift */; };
-		0503A9732B251D4E003CF2B5 /* ConcentrationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0503A9722B251D4E003CF2B5 /* ConcentrationUITests.swift */; };
-		0503A9752B251D4E003CF2B5 /* ConcentrationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0503A9742B251D4E003CF2B5 /* ConcentrationUITestsLaunchTests.swift */; };
+		0503A9692B251D4E003CF2B5 /* MemorizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0503A9682B251D4E003CF2B5 /* MemorizeTests.swift */; };
+		0503A9732B251D4E003CF2B5 /* MemorizeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0503A9722B251D4E003CF2B5 /* MemorizeUITests.swift */; };
+		0503A9752B251D4E003CF2B5 /* MemorizeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0503A9742B251D4E003CF2B5 /* MemorizeUITestsLaunchTests.swift */; };
+		05B20FC52B3A61F7003C9DF1 /* EmojiMemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B20FC42B3A61F7003C9DF1 /* EmojiMemoryGame.swift */; };
+		05B20FC72B3A6219003C9DF1 /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05B20FC62B3A6219003C9DF1 /* MemoryGame.swift */; };
+		05BBD3C02B477FF7001469E2 /* Memorize in Resources */ = {isa = PBXBuildFile; fileRef = 05BBD3BF2B477FF7001469E2 /* Memorize */; };
+		05BBD3C22B478008001469E2 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BBD3C12B478008001469E2 /* Array.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,28 +26,32 @@
 			containerPortal = 0503A94C2B251D4C003CF2B5 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0503A9532B251D4C003CF2B5;
-			remoteInfo = Concentration;
+			remoteInfo = Memorize;
 		};
 		0503A96F2B251D4E003CF2B5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0503A94C2B251D4C003CF2B5 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 0503A9532B251D4C003CF2B5;
-			remoteInfo = Concentration;
+			remoteInfo = Memorize;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0503A9542B251D4C003CF2B5 /* Concentration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Concentration.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0503A9572B251D4C003CF2B5 /* ConcentrationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationApp.swift; sourceTree = "<group>"; };
-		0503A9592B251D4C003CF2B5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0503A9542B251D4C003CF2B5 /* Memorize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memorize.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0503A9572B251D4C003CF2B5 /* MemorizeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeApp.swift; sourceTree = "<group>"; };
+		0503A9592B251D4C003CF2B5 /* EmojiMemoryGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGameView.swift; sourceTree = "<group>"; };
 		0503A95B2B251D4E003CF2B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0503A95E2B251D4E003CF2B5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		0503A9642B251D4E003CF2B5 /* ConcentrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConcentrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0503A9682B251D4E003CF2B5 /* ConcentrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationTests.swift; sourceTree = "<group>"; };
-		0503A96E2B251D4E003CF2B5 /* ConcentrationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConcentrationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0503A9722B251D4E003CF2B5 /* ConcentrationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationUITests.swift; sourceTree = "<group>"; };
-		0503A9742B251D4E003CF2B5 /* ConcentrationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0503A9642B251D4E003CF2B5 /* MemorizeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemorizeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0503A9682B251D4E003CF2B5 /* MemorizeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeTests.swift; sourceTree = "<group>"; };
+		0503A96E2B251D4E003CF2B5 /* MemorizeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemorizeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0503A9722B251D4E003CF2B5 /* MemorizeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeUITests.swift; sourceTree = "<group>"; };
+		0503A9742B251D4E003CF2B5 /* MemorizeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		05B20FC42B3A61F7003C9DF1 /* EmojiMemoryGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGame.swift; sourceTree = "<group>"; };
+		05B20FC62B3A6219003C9DF1 /* MemoryGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
+		05BBD3BF2B477FF7001469E2 /* Memorize */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Memorize; sourceTree = "<group>"; };
+		05BBD3C12B478008001469E2 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,9 +82,10 @@
 		0503A94B2B251D4C003CF2B5 = {
 			isa = PBXGroup;
 			children = (
-				0503A9562B251D4C003CF2B5 /* Concentration */,
-				0503A9672B251D4E003CF2B5 /* ConcentrationTests */,
-				0503A9712B251D4E003CF2B5 /* ConcentrationUITests */,
+				0503A9562B251D4C003CF2B5 /* Memorize */,
+				05BBD3BF2B477FF7001469E2 /* Memorize */,
+				0503A9672B251D4E003CF2B5 /* MemorizeTests */,
+				0503A9712B251D4E003CF2B5 /* MemorizeUITests */,
 				0503A9552B251D4C003CF2B5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,22 +93,25 @@
 		0503A9552B251D4C003CF2B5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0503A9542B251D4C003CF2B5 /* Concentration.app */,
-				0503A9642B251D4E003CF2B5 /* ConcentrationTests.xctest */,
-				0503A96E2B251D4E003CF2B5 /* ConcentrationUITests.xctest */,
+				0503A9542B251D4C003CF2B5 /* Memorize.app */,
+				0503A9642B251D4E003CF2B5 /* MemorizeTests.xctest */,
+				0503A96E2B251D4E003CF2B5 /* MemorizeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0503A9562B251D4C003CF2B5 /* Concentration */ = {
+		0503A9562B251D4C003CF2B5 /* Memorize */ = {
 			isa = PBXGroup;
 			children = (
-				0503A9572B251D4C003CF2B5 /* ConcentrationApp.swift */,
-				0503A9592B251D4C003CF2B5 /* ContentView.swift */,
+				0503A9572B251D4C003CF2B5 /* MemorizeApp.swift */,
+				05B20FC62B3A6219003C9DF1 /* MemoryGame.swift */,
+				05BBD3C12B478008001469E2 /* Array.swift */,
+				05B20FC42B3A61F7003C9DF1 /* EmojiMemoryGame.swift */,
+				0503A9592B251D4C003CF2B5 /* EmojiMemoryGameView.swift */,
 				0503A95B2B251D4E003CF2B5 /* Assets.xcassets */,
 				0503A95D2B251D4E003CF2B5 /* Preview Content */,
 			);
-			path = Concentration;
+			path = Memorize;
 			sourceTree = "<group>";
 		};
 		0503A95D2B251D4E003CF2B5 /* Preview Content */ = {
@@ -110,29 +122,29 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		0503A9672B251D4E003CF2B5 /* ConcentrationTests */ = {
+		0503A9672B251D4E003CF2B5 /* MemorizeTests */ = {
 			isa = PBXGroup;
 			children = (
-				0503A9682B251D4E003CF2B5 /* ConcentrationTests.swift */,
+				0503A9682B251D4E003CF2B5 /* MemorizeTests.swift */,
 			);
-			path = ConcentrationTests;
+			path = MemorizeTests;
 			sourceTree = "<group>";
 		};
-		0503A9712B251D4E003CF2B5 /* ConcentrationUITests */ = {
+		0503A9712B251D4E003CF2B5 /* MemorizeUITests */ = {
 			isa = PBXGroup;
 			children = (
-				0503A9722B251D4E003CF2B5 /* ConcentrationUITests.swift */,
-				0503A9742B251D4E003CF2B5 /* ConcentrationUITestsLaunchTests.swift */,
+				0503A9722B251D4E003CF2B5 /* MemorizeUITests.swift */,
+				0503A9742B251D4E003CF2B5 /* MemorizeUITestsLaunchTests.swift */,
 			);
-			path = ConcentrationUITests;
+			path = MemorizeUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0503A9532B251D4C003CF2B5 /* Concentration */ = {
+		0503A9532B251D4C003CF2B5 /* Memorize */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0503A9782B251D4E003CF2B5 /* Build configuration list for PBXNativeTarget "Concentration" */;
+			buildConfigurationList = 0503A9782B251D4E003CF2B5 /* Build configuration list for PBXNativeTarget "Memorize" */;
 			buildPhases = (
 				0503A9502B251D4C003CF2B5 /* Sources */,
 				0503A9512B251D4C003CF2B5 /* Frameworks */,
@@ -142,14 +154,14 @@
 			);
 			dependencies = (
 			);
-			name = Concentration;
-			productName = Concentration;
-			productReference = 0503A9542B251D4C003CF2B5 /* Concentration.app */;
+			name = Memorize;
+			productName = Memorize;
+			productReference = 0503A9542B251D4C003CF2B5 /* Memorize.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0503A9632B251D4E003CF2B5 /* ConcentrationTests */ = {
+		0503A9632B251D4E003CF2B5 /* MemorizeTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0503A97B2B251D4E003CF2B5 /* Build configuration list for PBXNativeTarget "ConcentrationTests" */;
+			buildConfigurationList = 0503A97B2B251D4E003CF2B5 /* Build configuration list for PBXNativeTarget "MemorizeTests" */;
 			buildPhases = (
 				0503A9602B251D4E003CF2B5 /* Sources */,
 				0503A9612B251D4E003CF2B5 /* Frameworks */,
@@ -160,14 +172,14 @@
 			dependencies = (
 				0503A9662B251D4E003CF2B5 /* PBXTargetDependency */,
 			);
-			name = ConcentrationTests;
-			productName = ConcentrationTests;
-			productReference = 0503A9642B251D4E003CF2B5 /* ConcentrationTests.xctest */;
+			name = MemorizeTests;
+			productName = MemorizeTests;
+			productReference = 0503A9642B251D4E003CF2B5 /* MemorizeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		0503A96D2B251D4E003CF2B5 /* ConcentrationUITests */ = {
+		0503A96D2B251D4E003CF2B5 /* MemorizeUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0503A97E2B251D4E003CF2B5 /* Build configuration list for PBXNativeTarget "ConcentrationUITests" */;
+			buildConfigurationList = 0503A97E2B251D4E003CF2B5 /* Build configuration list for PBXNativeTarget "MemorizeUITests" */;
 			buildPhases = (
 				0503A96A2B251D4E003CF2B5 /* Sources */,
 				0503A96B2B251D4E003CF2B5 /* Frameworks */,
@@ -178,9 +190,9 @@
 			dependencies = (
 				0503A9702B251D4E003CF2B5 /* PBXTargetDependency */,
 			);
-			name = ConcentrationUITests;
-			productName = ConcentrationUITests;
-			productReference = 0503A96E2B251D4E003CF2B5 /* ConcentrationUITests.xctest */;
+			name = MemorizeUITests;
+			productName = MemorizeUITests;
+			productReference = 0503A96E2B251D4E003CF2B5 /* MemorizeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -206,7 +218,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0503A94F2B251D4C003CF2B5 /* Build configuration list for PBXProject "Concentration" */;
+			buildConfigurationList = 0503A94F2B251D4C003CF2B5 /* Build configuration list for PBXProject "Memorize" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -219,9 +231,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0503A9532B251D4C003CF2B5 /* Concentration */,
-				0503A9632B251D4E003CF2B5 /* ConcentrationTests */,
-				0503A96D2B251D4E003CF2B5 /* ConcentrationUITests */,
+				0503A9532B251D4C003CF2B5 /* Memorize */,
+				0503A9632B251D4E003CF2B5 /* MemorizeTests */,
+				0503A96D2B251D4E003CF2B5 /* MemorizeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -231,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05BBD3C02B477FF7001469E2 /* Memorize in Resources */,
 				0503A95F2B251D4E003CF2B5 /* Preview Assets.xcassets in Resources */,
 				0503A95C2B251D4E003CF2B5 /* Assets.xcassets in Resources */,
 			);
@@ -257,8 +270,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0503A95A2B251D4C003CF2B5 /* ContentView.swift in Sources */,
-				0503A9582B251D4C003CF2B5 /* ConcentrationApp.swift in Sources */,
+				0503A95A2B251D4C003CF2B5 /* EmojiMemoryGameView.swift in Sources */,
+				05BBD3C22B478008001469E2 /* Array.swift in Sources */,
+				0503A9582B251D4C003CF2B5 /* MemorizeApp.swift in Sources */,
+				05B20FC72B3A6219003C9DF1 /* MemoryGame.swift in Sources */,
+				05B20FC52B3A61F7003C9DF1 /* EmojiMemoryGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0503A9692B251D4E003CF2B5 /* ConcentrationTests.swift in Sources */,
+				0503A9692B251D4E003CF2B5 /* MemorizeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +290,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0503A9752B251D4E003CF2B5 /* ConcentrationUITestsLaunchTests.swift in Sources */,
-				0503A9732B251D4E003CF2B5 /* ConcentrationUITests.swift in Sources */,
+				0503A9752B251D4E003CF2B5 /* MemorizeUITestsLaunchTests.swift in Sources */,
+				0503A9732B251D4E003CF2B5 /* MemorizeUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,12 +300,12 @@
 /* Begin PBXTargetDependency section */
 		0503A9662B251D4E003CF2B5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0503A9532B251D4C003CF2B5 /* Concentration */;
+			target = 0503A9532B251D4C003CF2B5 /* Memorize */;
 			targetProxy = 0503A9652B251D4E003CF2B5 /* PBXContainerItemProxy */;
 		};
 		0503A9702B251D4E003CF2B5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0503A9532B251D4C003CF2B5 /* Concentration */;
+			target = 0503A9532B251D4C003CF2B5 /* Memorize */;
 			targetProxy = 0503A96F2B251D4E003CF2B5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -416,7 +432,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Concentration/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Memorize/Preview Content\"";
 				DEVELOPMENT_TEAM = Z3VPV4Z366;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -430,7 +446,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.endobit.Concentration;
+				PRODUCT_BUNDLE_IDENTIFIER = com.endobit.Memorize;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -445,7 +461,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Concentration/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Memorize/Preview Content\"";
 				DEVELOPMENT_TEAM = Z3VPV4Z366;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -459,7 +475,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.endobit.Concentration;
+				PRODUCT_BUNDLE_IDENTIFIER = com.endobit.Memorize;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -478,12 +494,12 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.endobit.ConcentrationTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.endobit.MemorizeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Concentration.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Concentration";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Memorize.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Memorize";
 			};
 			name = Debug;
 		};
@@ -498,12 +514,12 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.endobit.ConcentrationTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.endobit.MemorizeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Concentration.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Concentration";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Memorize.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Memorize";
 			};
 			name = Release;
 		};
@@ -516,12 +532,12 @@
 				DEVELOPMENT_TEAM = Z3VPV4Z366;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.endobit.ConcentrationUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.endobit.MemorizeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Concentration;
+				TEST_TARGET_NAME = Memorize;
 			};
 			name = Debug;
 		};
@@ -534,19 +550,19 @@
 				DEVELOPMENT_TEAM = Z3VPV4Z366;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.endobit.ConcentrationUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.endobit.MemorizeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Concentration;
+				TEST_TARGET_NAME = Memorize;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0503A94F2B251D4C003CF2B5 /* Build configuration list for PBXProject "Concentration" */ = {
+		0503A94F2B251D4C003CF2B5 /* Build configuration list for PBXProject "Memorize" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0503A9762B251D4E003CF2B5 /* Debug */,
@@ -555,7 +571,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0503A9782B251D4E003CF2B5 /* Build configuration list for PBXNativeTarget "Concentration" */ = {
+		0503A9782B251D4E003CF2B5 /* Build configuration list for PBXNativeTarget "Memorize" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0503A9792B251D4E003CF2B5 /* Debug */,
@@ -564,7 +580,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0503A97B2B251D4E003CF2B5 /* Build configuration list for PBXNativeTarget "ConcentrationTests" */ = {
+		0503A97B2B251D4E003CF2B5 /* Build configuration list for PBXNativeTarget "MemorizeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0503A97C2B251D4E003CF2B5 /* Debug */,
@@ -573,7 +589,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0503A97E2B251D4E003CF2B5 /* Build configuration list for PBXNativeTarget "ConcentrationUITests" */ = {
+		0503A97E2B251D4E003CF2B5 /* Build configuration list for PBXNativeTarget "MemorizeUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0503A97F2B251D4E003CF2B5 /* Debug */,

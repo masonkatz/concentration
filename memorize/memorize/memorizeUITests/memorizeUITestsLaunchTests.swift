@@ -1,13 +1,13 @@
 //
-//  ConcentrationUITestsLaunchTests.swift
-//  ConcentrationUITests
+//  MemorizeUITestsLaunchTests.swift
+//  MemorizeUITests
 //
-//  Created by Mason Katz on 12/9/23.
+//  Created by Mason Katz on 1/5/24.
 //
 
 import XCTest
 
-final class ConcentrationUITestsLaunchTests: XCTestCase {
+final class MemorizeUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
