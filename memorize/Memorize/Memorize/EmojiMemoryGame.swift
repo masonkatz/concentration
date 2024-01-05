@@ -16,14 +16,14 @@ struct Theme {
         self.pairs = pairs
     }
 
-    func emojis() -> [String] {
-        return Array(emojiSet.shuffled()[0..<pairs])
+    var emojis: [String] {
+        Array(emojiSet.shuffled()[0..<pairs])
     }
 
 }
 
 class EmojiMemoryGame: ObservableObject {
-    private static let themes = [
+    private let themes = [
         Theme(
             name: "animals",
             emojis: [
@@ -38,20 +38,19 @@ class EmojiMemoryGame: ObservableObject {
             pairs: 10),
     ]
 
-    static var theme = newTheme()
+    @Published private var game: MemoryGame<String>
+    private(set) var theme: Theme
 
-    private static func newTheme() -> Theme {
-        if let theme = themes.randomElement() {
-            return theme
+    init() {  // TODO: how do avoid code replication with newGame()
+        if let element = themes.randomElement() {
+            theme = element
+        } else {
+            theme = Theme(name: "", emojis: [], color: .red, pairs: 0)
         }
 
-        return Theme(name: "", emojis: [], color: .red, pairs: 0)
-    }
+        let emojis = theme.emojis
 
-    private static func newGame() -> MemoryGame<String> {
-        let emojis = theme.emojis()
-
-        return MemoryGame(numberOfPairsOfCards: max(emojis.count, 2)) { pairIndex in
+        game = MemoryGame(numberOfPairsOfCards: max(emojis.count, 2)) { pairIndex in
             if emojis.indices.contains(pairIndex) {
                 return emojis[pairIndex]
             }
@@ -60,9 +59,22 @@ class EmojiMemoryGame: ObservableObject {
         }
     }
 
-    var theme: Theme { EmojiMemoryGame.theme }
+    private func newTheme() -> Theme {
+        if let element = themes.randomElement() {
+            return element
+        }
+        return Theme(name: "", emojis: [], color: .red, pairs: 0)
+    }
 
-    @Published private var game = newGame()
+    private func newGame(emojis: [String]) -> MemoryGame<String> {
+        return MemoryGame(numberOfPairsOfCards: max(emojis.count, 2)) { pairIndex in
+            if emojis.indices.contains(pairIndex) {
+                return emojis[pairIndex]
+            }
+
+            return "❓"
+        }
+    }
 
     var cards: [MemoryGame<String>.Card] {
         return game.cards
@@ -73,8 +85,8 @@ class EmojiMemoryGame: ObservableObject {
     // MARK: Intents
 
     func newGame() {
-        EmojiMemoryGame.theme = EmojiMemoryGame.newTheme()
-        game = EmojiMemoryGame.newGame()
+        theme = newTheme()
+        game = newGame(emojis: theme.emojis)
     }
 
     func shuffle() {
