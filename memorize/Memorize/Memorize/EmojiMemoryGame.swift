@@ -38,25 +38,11 @@ class EmojiMemoryGame: ObservableObject {
             pairs: 10),
     ]
 
-    @Published private var game: MemoryGame<String>
-    private(set) var theme: Theme
+    @Published private var game: MemoryGame<String>!
+    private(set) var theme: Theme!
 
-    init() {  // TODO: how do avoid code replication with newGame()
-        if let element = themes.randomElement() {
-            theme = element
-        } else {
-            theme = Theme(name: "", emojis: [], color: .red, pairs: 0)
-        }
-
-        let emojis = theme.emojis
-
-        game = MemoryGame(numberOfPairsOfCards: max(emojis.count, 2)) { pairIndex in
-            if emojis.indices.contains(pairIndex) {
-                return emojis[pairIndex]
-            }
-
-            return "❓"
-        }
+    init() {
+        newGame()
     }
 
     private func newTheme() -> Theme {
