@@ -2,25 +2,7 @@
 
 import SwiftUI
 
-struct Theme {
-    private let emojiSet: [String]
-    private let pairs: Int
 
-    let name: String
-    let color: Color
-
-    init(name: String, emojis: [String], color: Color, pairs: Int) {
-        self.name = name
-        self.emojiSet = emojis
-        self.color = color
-        self.pairs = pairs
-    }
-
-    var emojis: [String] {
-        Array(emojiSet.shuffled()[0..<pairs])
-    }
-
-}
 
 class EmojiMemoryGame: ObservableObject {
     private let themes = [
@@ -28,13 +10,13 @@ class EmojiMemoryGame: ObservableObject {
             name: "animals",
             emojis: [
                 "🐶", "🐱", "🐭", "🐹", "🐰", "🦊", "🐻", "🐼", "🐻‍❄️", "🐨", "🐯", "🦁", "🐮", "🐷", "🐸", "🐵",
-            ], color: .green, pairs: 14),
+            ], color: "green", pairs: 14),
         Theme(
             name: "spooky", emojis: ["👻", "🎃", "🕷", "😈", "💀", "🕸", "🧙‍♀️", "🙀", "👹", "😱", "☠️", "🍭"],
-            color: .orange, pairs: 12),
+            color: "orange", pairs: 12),
         Theme(
             name: "transportation",
-            emojis: ["🚔", "🚂", "🚲", "🚗", "🏍", "✈️", "⛵️", "🛵", "🛴", "🛸", "🚁", "🛶", "🚠"], color: .blue,
+            emojis: ["🚔", "🚂", "🚲", "🚗", "🏍", "✈️", "⛵️", "🛵", "🛴", "🛸", "🚁", "🛶", "🚠"], color: "blue",
             pairs: 10),
     ]
 
@@ -49,7 +31,7 @@ class EmojiMemoryGame: ObservableObject {
         if let element = themes.randomElement() {
             return element
         }
-        return Theme(name: "", emojis: [], color: .red, pairs: 0)
+        return Theme(name: "", emojis: [], color: "red", pairs: 0)
     }
 
     private func newGame(emojis: [String]) -> MemoryGame<String> {
@@ -61,12 +43,29 @@ class EmojiMemoryGame: ObservableObject {
             return "❓"
         }
     }
+    
+    private func makeColor(from color: String) -> Color {
+        switch color {
+        case "blue":
+            return Color.blue
+        case "green":
+            return Color.green
+        case "orange":
+            return Color.orange
+        case "red":
+            fallthrough
+        default:
+            return Color.red
+        }
+    }
 
     var cards: [MemoryGame<String>.Card] {
         return game.cards
     }
 
     var score: Int { game.score }
+    
+    var themeColor: Color { makeColor(from: theme.color) }
 
     // MARK: Intents
 

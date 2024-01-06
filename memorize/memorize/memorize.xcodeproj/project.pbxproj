@@ -18,6 +18,7 @@
 		05A5A9A12B48962800851D5B /* EmojiMemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A5A99E2B48962700851D5B /* EmojiMemoryGame.swift */; };
 		05A5A9A22B48962800851D5B /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A5A99F2B48962800851D5B /* MemoryGame.swift */; };
 		05A5A9A32B48962800851D5B /* EmojiMemoryGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A5A9A02B48962800851D5B /* EmojiMemoryGameView.swift */; };
+		05A5A9A52B48E12F00851D5B /* EmojiTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A5A9A42B48E12F00851D5B /* EmojiTheme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		05A5A99E2B48962700851D5B /* EmojiMemoryGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGame.swift; sourceTree = "<group>"; };
 		05A5A99F2B48962800851D5B /* MemoryGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
 		05A5A9A02B48962800851D5B /* EmojiMemoryGameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGameView.swift; sourceTree = "<group>"; };
+		05A5A9A42B48E12F00851D5B /* EmojiTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTheme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			children = (
 				05A5A9722B48952200851D5B /* MemorizeApp.swift */,
 				05A5A99E2B48962700851D5B /* EmojiMemoryGame.swift */,
+				05A5A9A42B48E12F00851D5B /* EmojiTheme.swift */,
 				05A5A9A02B48962800851D5B /* EmojiMemoryGameView.swift */,
 				05A5A99F2B48962800851D5B /* MemoryGame.swift */,
 				05A5A99C2B48961400851D5B /* Array.swift */,
@@ -270,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05A5A99D2B48961400851D5B /* Array.swift in Sources */,
+				05A5A9A52B48E12F00851D5B /* EmojiTheme.swift in Sources */,
 				05A5A9752B48952200851D5B /* ContentView.swift in Sources */,
 				05A5A9A32B48962800851D5B /* EmojiMemoryGameView.swift in Sources */,
 				05A5A9A22B48962800851D5B /* MemoryGame.swift in Sources */,

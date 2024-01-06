@@ -42,7 +42,7 @@ struct EmojiMemoryGameView: View {
                 }
             }
         }
-        .foregroundColor(viewModel.theme.color)
+        .foregroundColor(viewModel.themeColor)
     }
 
     func gridItemWidthThatFits(count: Int, size: CGSize, aspectRatio: CGFloat) -> CGFloat {
