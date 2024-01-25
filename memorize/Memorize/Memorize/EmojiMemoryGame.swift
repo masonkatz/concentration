@@ -2,8 +2,6 @@
 
 import SwiftUI
 
-
-
 class EmojiMemoryGame: ObservableObject {
     private let themes = [
         Theme(
@@ -16,7 +14,8 @@ class EmojiMemoryGame: ObservableObject {
             color: "orange", pairs: 12),
         Theme(
             name: "transportation",
-            emojis: ["🚔", "🚂", "🚲", "🚗", "🏍", "✈️", "⛵️", "🛵", "🛴", "🛸", "🚁", "🛶", "🚠"], color: "blue",
+            emojis: ["🚔", "🚂", "🚲", "🚗", "🏍", "✈️", "⛵️", "🛵", "🛴", "🛸", "🚁", "🛶", "🚠"],
+            color: "blue",
             pairs: 10),
     ]
 
@@ -43,7 +42,7 @@ class EmojiMemoryGame: ObservableObject {
             return "❓"
         }
     }
-    
+
     private func makeColor(from color: String) -> Color {
         switch color {
         case "blue":
@@ -64,7 +63,7 @@ class EmojiMemoryGame: ObservableObject {
     }
 
     var score: Int { game.score }
-    
+
     var themeColor: Color { makeColor(from: theme.color) }
 
     // MARK: Intents
